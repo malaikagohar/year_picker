@@ -1,73 +1,78 @@
-<style>
-    .step {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Year Picker Widget</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .step {
         background: #f9f6fb;
         padding: 15px;
         border-left: 4px solid #714b67;
         border-radius: 8px;
         margin-bottom: 15px;
-    }
-</style>
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
+      }
+    </style>
+  </head>
+  <body>
+    <section class="oe_container">
+      <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color: #875a7b">Year Picker Widget</h2>
         <h3 class="oe_slogan">
-            Allows users to easily select specific years within Odoo.
+          Allows users to easily select specific years within Odoo.
         </h3>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="oe_container oe_dark">
-    <div class="oe_row oe_spaced">
+    <section class="oe_container oe_dark">
+      <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color: #875a7b">Usage</h2>
         <h3 class="oe_slogan">Use actionable data to make better decisions</h3>
         <div class="step">
-            <h3>Step 1 — Define a Date Field</h3>
-            <p>Add a <code>Date</code> type field in your Python model:</p>
-            <pre><code>fiscal_year = fields.Date(string="Fiscal Year")</code></pre>
+          <h3>Step 1 — Define a Date Field</h3>
+          <p>Add a <code>Date</code> type field in your Python model:</p>
+          <pre><code>fiscal_year = fields.Date(string="Fiscal Year")</code></pre>
         </div>
 
         <div class="step">
-            <h3>Step 2 — Use the Widget in XML View</h3>
-            <p>
-                Open your form view and apply the <code>widget="year"</code> to your
-                date field:
-            </p>
-            <pre><code>&lt;field name="fiscal_year" widget="year"/&gt;</code></pre>
-            <p>
-                You can also pass options such as minimum/maximum date or future
-                warnings:
-            </p>
-            <pre><code>
+          <h3>Step 2 — Use the Widget in XML View</h3>
+          <p>
+            Open your form view and apply the <code>widget="year"</code> to your
+            date field:
+          </p>
+          <pre><code>&lt;field name="fiscal_year" widget="year"/&gt;</code></pre>
+          <p>
+            You can also pass options such as minimum/maximum date or future
+            warnings:
+          </p>
+          <pre><code>
 &lt;field name="fiscal_year" widget="year"
 /&gt;
                 </code></pre>
         </div>
-
         <div class="step">
-            <h3>Step 3 — Save and Reload</h3>
-            <p>
-                Save your XML view, upgrade the module, and open the form view. You’ll
-                now see a clean and intuitive year picker field!
-            </p>
+          <h3>Step 3 — Save and Reload</h3>
+          <p>
+            Save your XML view, upgrade the module, and open the form view.
+            You’ll now see a clean and intuitive year picker field!
+          </p>
         </div>
         <div class="oe_span6">
-            <img class="oe_picture oe_screenshot" src="year_picker.png" />
+          <img class="oe_picture oe_screenshot" src="year_picker.png" />
         </div>
-    </div>
-</section>
-
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color: #875a7b">
-           Support & Contact
-        </h2>
+      </div>
+    </section>
+    <section class="oe_container">
+      <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color: #875a7b">Support & Contact</h2>
         <p>
-                🧑‍💻 <strong>Developer:</strong> Malaika Gohar<br/>
-                📧 <strong>Email:</strong> malaikagohar2003@gmail.com.com<br/>
-            </p>
-    </div>
-</section>
-
-<section class="oe_container oe_separator"></section>
-<footer>
-        &copy; Year Picker Widget | Built for Odoo 18.0</footer>
+          🧑‍💻 <strong>Developer:</strong> Malaika Gohar<br />
+          📧 <strong>Email:</strong> malaikagohar2003@gmail.com.com<br />
+        </p>
+      </div>
+    </section>
+    <section class="oe_container oe_separator"></section>
+    <footer>&copy; Year Picker Widget | Built for Odoo 18.0</footer>
+  </body>
+</html>
